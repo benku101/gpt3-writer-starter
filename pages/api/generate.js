@@ -4,6 +4,8 @@ const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
+
+
 const openai = new OpenAIApi(configuration);
 const basePromptPrefix = `Tell me some songs that I would like based on the song below. Also, make sure to include songs that aren't by the same artist, but it's ok if some are. Also, when saying the artist, instead of saying "by" use "-".
 Song:`;
